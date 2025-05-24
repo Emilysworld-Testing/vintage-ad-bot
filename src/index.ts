@@ -10,7 +10,7 @@ function postTextFromImageName(imageName: string): string {
   const date = new Date(Number(dateParts[0]), Number(dateParts[1]) - 1, Number(dateParts[2] || 1));
 
   // Create a formatter
-  const formatter = new Intl.DateTimeFormat('en-UK', {
+  const formatter = new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
